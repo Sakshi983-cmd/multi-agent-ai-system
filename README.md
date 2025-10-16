@@ -1,43 +1,32 @@
-# multi-agent-ai-system
-A multi-agent AI system that classifies and routes PDF, JSON, or Email inputs.
-# 🧠 Multi-Agent AI Classifier System
-#APP- https://multi-agent-ai-system-4ds38fmwjgcawhwlcaejmn.streamlit.app/
-This project is a lightweight, demo AI system that:
+# 🤖 Multi-Agent AI System
 
-- Accepts input in JSON, Email (text), or plain text format
-- Classifies input type and intent (like RFQ, Invoice, Complaint)
-- Routes to correct agent (Email Agent or JSON Agent)
-- Maintains a shared memory log for context and traceability
+A sophisticated modular AI system integrating multiple intelligent agents for contextual retrieval, summarization, and task coordination. Built with LangChain, FastAPI, MLflow, and deployed on Azure cloud infrastructure.
 
-## 🚀 How to Run
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)
+![LangChain](https://img.shields.io/badge/LangChain-0.0.346-orange.svg)
+![Azure](https://img.shields.io/badge/Azure-Cloud-blue.svg)
 
-You can deploy this app using **[Streamlit Cloud](https://streamlit.io/cloud)**:
+## 🚀 Features
 
-1. Upload this repo to GitHub
-2. Deploy with Streamlit
-3. Main file: `app.py`
+### Core Capabilities
+- **Multi-Agent Architecture**: Specialized agents for different document types and intents
+- **Intelligent Routing**: Automatic format detection and intent classification
+- **Contextual Processing**: Advanced text processing with LangChain LLM integration
+- **Real-time Processing**: FastAPI-based REST API with background task handling
+- **Memory Management**: Shared memory system for conversation context
 
-## 📂 Agents Involved
+### Supported Document Types
+- 📧 **Email Processing**: Extract sender, subject, urgency, and entities
+- 📊 **JSON Processing**: Structured data extraction and validation
+- 📝 **Plain Text**: Summarization and content analysis
+- 🔍 **Intent Classification**: Automatic detection of user requirements
 
-- **Classifier Agent**: Detects format and intent
-- **JSON Agent**: Extracts from structured JSON
-- **Email Agent**: Extracts sender and subject info
-- **Shared Memory**: Stores logs in session state
+### Intelligent Agents
+- **JSON Agent**: Handles structured data processing
+- **Email Agent**: Email content extraction and analysis
+- **Text Agent**: General text processing and summarization
+- **Summarization Agent**: Advanced content summarization
+- **Classifier Agent**: Smart routing and intent detection
 
-## 🛠 Tech Stack
-
-- Python
-- Streamlit
-- Google Colab (for development)
-- GitHub (for deployment)
-
-## 🧪 Sample Inputs
-
-Try input like:
-
-```json
-{
-  "invoice_id": "12345",
-  "amount": 2500,
-  "date": "2025-05-01"
-}
+## 🏗 System Architecture
